@@ -1,0 +1,25 @@
+<!-- dashboards.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prime Surgical</title>
+  </head>
+  <body>
+    <h1>Sales Dashboard</h1>
+    {% for dashboard in content_objects %}
+    <h2>{{ dashboard.title }}</h2>
+    <p>{{ dashboard.description }}</p>
+    <p>Time Period: {{ dashboard.time_period }}</p>
+    <iframe
+      src="{{ dashboard.sheets_url }}"
+      frameborder="0"
+      onmousewheel=""
+      width="75%"
+      height="650"
+      style="background: transparent; border: 1px solid #ccc"
+    ></iframe>
+    {% empty %}
+    <p>No dashboard content available.</p>
+    {% endfor %}
+  </body>
+</html>
