@@ -1,10 +1,16 @@
+{% extends 'base.html' %}
+<!---->
+{% load static %} {% block title %}Paino.io{% endblock %}
+<!---->
+{% block content %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Paino.io</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
   </head>
   <body>
-    <h1>Paino.io</h1>
+    <h3>Dashboard</h3>
     <ul>
       <li>
         <a href="http://127.0.0.1:8000/dashboard/">Sales Dashboard</a>
@@ -17,3 +23,4 @@
     </ul>
   </body>
 </html>
+{% endblock %}
