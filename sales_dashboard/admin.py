@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import DashboardView, BookedRevenue
 
-# Register your models here.
+admin.site.register(DashboardView)
+admin.site.register(BookedRevenue)
+
+
