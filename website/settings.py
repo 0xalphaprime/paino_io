@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'sales_dashboard',
     'pong',
+    'neural_networks',
 ]
 
 MIDDLEWARE = [

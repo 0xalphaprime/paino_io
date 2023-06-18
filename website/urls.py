@@ -23,4 +23,5 @@ urlpatterns = [
     path("dashboard/", include("sales_dashboard.urls")),
     path("pong/", include("pong.urls")),
     path("", TemplateView.as_view(template_name="index.html"), name="index"),
+    path("neural_networks/", include("neural_networks.urls"), name="neural_networks"),
 ]
